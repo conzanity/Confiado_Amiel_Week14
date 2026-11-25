@@ -1,17 +1,20 @@
-# confiado_amiel_week14
+# Verde — Static Flutter UI (Week 14)
 
-A new Flutter project.
+**Student:** Amiel Confiado  
+**Project:** Verde E-Wallet App (Static UI Implementation)
 
-## Getting Started
+## Overview
+This repository contains the Week 14 static Flutter UI implementation of **Verde**, built using `StatelessWidget`, a centralized `ThemeData` palette, reusable components, and responsive layout widgets (`Scaffold`, `SafeArea`, `SingleChildScrollView`, `Column`, `Row`, `Container`, `Card`, and `ListView` / `GridView`).
 
-This project is a starting point for a Flutter application.
+## Implemented Screens
+1. **Login Screen (`lib/screens/verde_login_screen.dart`)** — Brand header with local leaf logo asset (`assets/images/verde_logo.png`), welcome typography, styled email and password input fields, primary sign-in button, and secondary navigation prompt.
+2. **Home Dashboard Screen (`lib/screens/verde_home_screen.dart`)** — Personalized greeting header, e-wallet balance card, quick action buttons, and recent transaction/activity cards with consistent brand styling.
 
-A few resources to get you started if this is your first Flutter project:
+## How to Preview Both Screens
+Because this submission focuses on static UI layout without multi-screen navigation logic, both screens are wired through `lib/main.dart`:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Open `lib/main.dart`.
+2. By default, **`VerdeLoginScreen()`** is active:
+   ```dart
+   home: const VerdeLoginScreen(),
+   // home: const VerdeHomeScreen(),
